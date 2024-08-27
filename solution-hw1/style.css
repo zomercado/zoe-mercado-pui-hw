@@ -1,0 +1,29 @@
+body {
+    align-items: center;
+}
+
+.centered-content{
+text-align: center;
+}
+
+img {
+    width: 400px;
+}
+
+.roll-img {
+    border: 5px solid black;
+}
+
+h1.products-title {
+    text-emphasis: bold;
+    text-transform: uppercase;
+}
+
+h2.cart-title {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+h3.subtitle {
+    font-weight: 300;
+}
