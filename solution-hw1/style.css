@@ -2,8 +2,22 @@ body {
     align-items: center;
 }
 
-.centered-content{
-text-align: center;
+img#logo {
+    position: relative;
+    top: 20px;
+}
+
+hr.divider{
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 4px;
+    background: black;
+    margin-bottom: 50px;
+}
+
+.centered-content {
+    text-align: center;
 }
 
 img {
