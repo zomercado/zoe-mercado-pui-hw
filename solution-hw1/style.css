@@ -20,18 +20,8 @@ hr.divider{
     text-align: center;
 }
 
-/* Product Gallery */
 img {
     width: 400px;
-}
-
-/* shopping cart */
-.small-img {
-    width: 200px;
-}
-/* Product Detail */
-.large-img {
-    width: 600px;
 }
 
 .roll-img {
@@ -50,8 +40,4 @@ h2.cart-title {
 
 h3.subtitle {
     font-weight: 300;
-}
-
-.item-card {
-align-items: center;
 }
