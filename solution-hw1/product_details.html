@@ -4,6 +4,7 @@
 <title>Product Detail Page</title>
 <link rel="stylesheet" href="style.css">
 
+
 <body>
   <header>
     <a href="index.html">
@@ -11,18 +12,21 @@
     </a>
     <hr class="divider">
   </header>
-  <div class="centered-content">
-    <h1 class="products-title">Products</h1>
+  <div class="main-content">
+    <a href="index.html">
+      <h1 class="products-title">Products</h1>
+    </a>
     <h2 class="cart-title">Cart</h2>
-    <h3 class="subtitle">Original cinammon roll</h3>
-  </div>
+    <h3 class="subtitle">Original cinnammon roll</h3>
+
+<div class="details">
   <div class="detail-page-image">
     <img class="large-img" src="../assets/products/original-cinnamon-roll.jpg"
       alt="enlarged image of delicious cinnammon roll">
     <p class="caption">Customize our delicious, hand-made cinammon roll to your liking!</p>
   </div>
   <div class="dropdown">
-    <button class="dropbtn">Glazing:</button>
+    <p class="button-header">Glazing:</p>
     <div class="dropdown-content">
       <select name="glazing-content">
         <option value="Keep original">Keep original</option>
@@ -31,7 +35,7 @@
         <option value="Double chocolate">Double chocolate</option>
       </select>
     </div>
-    <button class="dropbtn">Pack Size:</button>
+    <p class="button-header">Pack Size:</p>
     <div class="dropdown-content">
       <select name="pack-size">
         <option value="1">1</option>
@@ -42,9 +46,11 @@
     </div>
   </div>
   <div class="call-to-action">
-    <p class="price">$ 2.49</p>
-    <button>Add to Cart</button>
+    <p id = "price-detail-page" class="price">$ 2.49</p>
+    <button class="cart-button">Add to Cart</button>
   </div>
+</div>
+ 
 </body>
 
 </html>

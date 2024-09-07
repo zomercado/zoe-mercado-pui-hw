@@ -36,11 +36,13 @@ img {
 /* shopping cart */
 .small-img {
     width: 200px;
+    border: 5px solid black;
 }
 
 /* product details */
 .large-img {
     width: 600px;
+    border: 5px solid black;
 }
 
 .roll-img {
@@ -51,8 +53,20 @@ img {
     text-decoration: underline;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    /* got from Stack Overflow - Keeps the text color the same as its surroundings */
+}
+
+a h1.products-title {
+    text-transform: uppercase;
+    font-size: 18px;
+    text-emphasis: bold;
+}
+
 h1.products-title {
-    text-decoration: none; 
+    text-decoration: none;
     color: black;
     text-emphasis: bold;
     text-transform: uppercase;
@@ -63,12 +77,11 @@ h2.cart-title {
     text-transform: uppercase;
     font-weight: 300;
     font-size: 18px;
-    
 }
 
 h3.subtitle {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 26px;
 }
 
 .caption {
@@ -76,6 +89,55 @@ h3.subtitle {
     line-height: 6px;
 }
 
-.cart-title{
-   padding-bottom: 50px;
+.cart-title {
+    padding-bottom: 50px;
+}
+
+/* yellow highlight on hover */
+
+.cinnammon-roll-block:hover {
+    background-color: yellow;
+    transition: width 0.2s padding 0.2s;
+    padding: 8px;
+}
+
+/* bold product name on hover */
+.cinnammon-roll-block:hover .type{
+    font-weight: bold;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px; 
+}
+
+.dropdown-content select{
+    width: 150px; 
+    border: 2px solid black;  /* Border thickness, style, and color */
+    padding: 5px;
+}
+
+.call-to-action{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px
+    
+}
+
+.cart-button {
+    cursor: pointer;
+    background-color: yellow; 
+    color: black;
+    padding: 4px 10px; 
+    font-weight: bold;
+    font-size: 14px; 
+    border: 2px solid black; 
+}
+
+#price-detail-page {
+    font-weight: bold;
 }
