@@ -111,6 +111,7 @@ h3.subtitle {
 
 .dropdown {
     text-align: left;
+    margin-left: 0px;
 }
 
 .details {
@@ -122,7 +123,7 @@ h3.subtitle {
 }
 
 .dropdown-content select{
-    width: 150px; 
+    width: 190px; 
     border: 2px solid black;  /* Border thickness, style, and color */
     padding: 5px;
 }
@@ -131,7 +132,7 @@ h3.subtitle {
     padding-top: 50px;
     display: flex;
     flex-direction: row;
-    gap: 30px
+    gap: 25px;
     
 }
 
@@ -139,9 +140,10 @@ h3.subtitle {
     cursor: pointer;
     background-color: yellow; 
     color: black;
-    padding: 4px 10px; 
+    margin-top: 12px;
+    padding: 4px 20px; 
     font-weight: bold;
-    font-size: 14px; 
+    font-size: 12px; 
     border: 2px solid black; 
 }
 
@@ -151,7 +153,11 @@ h3.subtitle {
 
 .detail-caption {
     max-width: 190px;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+    text-align: left; 
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.button-header {
+    margin-bottom: 6px;
 }
