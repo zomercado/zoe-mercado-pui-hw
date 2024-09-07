@@ -52,24 +52,30 @@ img {
 }
 
 h1.products-title {
+    text-decoration: none; 
+    color: black;
     text-emphasis: bold;
     text-transform: uppercase;
+    font-size: 18px;
 }
 
 h2.cart-title {
     text-transform: uppercase;
     font-weight: 300;
+    font-size: 18px;
+    
 }
 
 h3.subtitle {
     font-weight: 300;
-}
-
-a .products-title {
-    text-decoration: none;
+    font-size: 20px;
 }
 
 .caption {
     text-align: left;
     line-height: 6px;
+}
+
+.cart-title{
+   padding-bottom: 50px;
 }
