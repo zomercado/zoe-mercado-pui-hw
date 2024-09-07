@@ -138,7 +138,7 @@ h3.subtitle {
     
 }
 
-.button {
+.button-link {
     cursor: pointer;
     background-color: yellow; 
     color: black;
@@ -147,6 +147,22 @@ h3.subtitle {
     font-weight: bold;
     font-size: 12px; 
     border: 2px solid black; 
+}
+
+.button-link {
+    display: inline-block;
+    cursor: pointer;
+    background-color: yellow;
+    color: black;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 4px 20px;
+    font-weight: bold;
+    font-size: 12px;
+    border: 2px solid black;
+    text-align: center;
+    text-decoration: none; /* Removes underline */
+
 }
 
 #price-detail-page {
