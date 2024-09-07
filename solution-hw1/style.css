@@ -20,6 +20,7 @@ hr.divider {
     text-align: center;
 }
 
+
 .gallery {
     display: flex;
     justify-content: center;
@@ -106,6 +107,12 @@ h3.subtitle {
     font-weight: bold;
 }
 
+/*product detail page */
+
+.dropdown {
+    text-align: left;
+}
+
 .details {
     display: flex;
     justify-content: center;
@@ -140,4 +147,11 @@ h3.subtitle {
 
 #price-detail-page {
     font-weight: bold;
+}
+
+.detail-caption {
+    max-width: 190px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
 }
