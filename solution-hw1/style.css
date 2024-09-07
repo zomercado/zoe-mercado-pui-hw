@@ -7,7 +7,7 @@ img#logo {
     top: 20px;
 }
 
-hr.divider{
+hr.divider {
     position: relative;
     top: 20px;
     border: none;
@@ -16,16 +16,39 @@ hr.divider{
     margin-bottom: 50px;
 }
 
-.centered-content {
+.main-content {
     text-align: center;
 }
 
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* product gallery */
 img {
     width: 400px;
 }
 
+/* shopping cart */
+.small-img {
+    width: 200px;
+}
+
+/* product details */
+.large-img {
+    width: 600px;
+}
+
 .roll-img {
     border: 5px solid black;
+}
+
+.type {
+    text-decoration: underline;
 }
 
 h1.products-title {
@@ -40,4 +63,13 @@ h2.cart-title {
 
 h3.subtitle {
     font-weight: 300;
+}
+
+a .products-title {
+    text-decoration: none;
+}
+
+.caption {
+    text-align: left;
+    line-height: 6px;
 }
