@@ -59,13 +59,17 @@ img {
 a {
     text-decoration: none;
     color: inherit;
-    /* got from Stack Overflow - Keeps the text color the same as its surroundings */
+    /* from Stack Overflow - Keeps the text color the same as its surroundings */
 }
+
 
 a h1.products-title {
     text-transform: uppercase;
     font-size: 18px;
     text-emphasis: bold;
+    background-color: yellow;
+    padding: 5px 5px;
+    display: inline; /* background color only covers the text, not the full width */
 }
 
 h1.products-title {
@@ -76,7 +80,7 @@ h1.products-title {
     font-size: 18px;
 }
 
-h2.cart-title {
+a h2.cart-title {
     text-transform: uppercase;
     font-weight: 300;
     font-size: 18px;
@@ -136,17 +140,6 @@ h3.subtitle {
     flex-direction: row;
     gap: 25px;
     
-}
-
-.button-link {
-    cursor: pointer;
-    background-color: yellow; 
-    color: black;
-    margin-top: 12px;
-    padding: 4px 20px; 
-    font-weight: bold;
-    font-size: 12px; 
-    border: 2px solid black; 
 }
 
 .button-link {
@@ -221,4 +214,40 @@ h3.subtitle {
 .checkout .button {
     margin-top: 0;      
     padding: 6px 18px;  
+}
+
+.cart-divider{
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 4px;
+    background: black;
+    margin-bottom: 50px;
+    width: 70%;
+}
+
+
+/* Highlight only the cart-title on the shopping cart page */
+
+a h2#cart-highlight-only {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 18px;
+    background-color: yellow;
+    padding: 5px 5px;
+    display: inline;
+    text-emphasis: bold;
+}
+
+#cart-highlight-only{
+    padding-bottom: 50px;
+}
+
+a h1#remove-highlight {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;
+    background-color: transparent; 
+    padding: 0;
 }
