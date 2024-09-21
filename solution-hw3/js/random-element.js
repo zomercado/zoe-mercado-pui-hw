@@ -2,7 +2,7 @@
 
 //create a dictionary (object) for the glazing and pack sizing //
 const glazingOptions = {
-  //each key is the name of a glazing option, and the value is the price adaptation
+  //each key is the name of a glazing option, and the value is the price adaptation//
   "Keep original": 0.0,
   "Sugar milk": 0.0,
   "Vanilla milk": 0.5,
@@ -24,7 +24,7 @@ function populateGlazingOptions() {
   const glazingSelect = document.getElementById("glazingOptions");
 
   //loop//
-  // const glazing is created by the loop to refer to each key in the object during iteration.
+  // const glazing is created by the loop to refer to each key in the object during iteration.//
   for (const glazing in glazingOptions) {
     const option = document.createElement("option"); //using JS to create options instead of hardcoding HTML//
     option.text = glazing;
