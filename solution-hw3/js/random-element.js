@@ -63,7 +63,7 @@ function calculatePrice() {
   //Update the price field on the Detail page to show the price of the current user selection.//
   document.getElementById(
     "price-detail-page"
-  ).innerText = `$ ${finalPrice.toFixed(2)}`; //convert to string and round to 2 decimals//
+  ).innerText = `$ ${finalPrice.toFixed(2)}`; //from Stack Overflow - convert to string and round to 2 decimals//
 }
 
 document
