@@ -25,10 +25,7 @@ const rolls = {
     }    
 };
 
-//create a dictionary (object) for the glazing and sizing//
-
 const glazingOptions = {
-//each key = name of a glazing option; value = price adaptation//
     "Keep original": 0.0,
     "Sugar milk": 0.0,
     "Vanilla milk": 0.5,
