@@ -39,7 +39,8 @@ function calculatePrice() {
   );
 
   //Compute the price: (basePrice + glazingPrice) * packPrice.//
-  const finalPrice = (rollBasePrice + selectedGlazingPrice) * selectedPackSizePrice;
+  const finalPrice =
+    (rollBasePrice + selectedGlazingPrice) * selectedPackSizePrice;
 
   //Update price field on Detail page to show price of current user selection//
   document.getElementById(
@@ -53,7 +54,7 @@ function calculatePrice() {
 const queryString = window.location.search;
 console.log(queryString);
 const params = new URLSearchParams(queryString);
-const rollType = params.get('roll');
+const rollType = params.get("roll");
 console.log(rollType);
 
 //Access the roll data from the rolls object (name, price, image path)//
@@ -81,28 +82,37 @@ calculatePrice();
 
 //add to cart function//
 //create an empty cart array//
-let cart = []
-function addToCart () {
+let cart = [];
+function addToCart() {
   const selectedGlazingValue = document.getElementById("glazingOptions").value;
   const selectedPackSizeValue = document.getElementById("packSizeOptions").value;
 
   //so that the console.log prints the key instead of the value - link from StackOverflow below//
   //https://stackoverflow.com/questions/9907419/how-to-get-a-key-in-a-javascript-object-by-its-value//
-  const selectedGlazing = Object.keys(glazingOptions).find(key => glazingOptions[key] == selectedGlazingValue);
-  const selectedPackSize = Object.keys(packSizeOptions).find(key => packSizeOptions[key] == selectedPackSizeValue);
+  const selectedGlazing = Object.keys(glazingOptions).find(
+    (key) => glazingOptions[key] == selectedGlazingValue
+  );
+  const selectedPackSize = Object.keys(packSizeOptions).find(
+    (key) => packSizeOptions[key] == selectedPackSizeValue
+  );
 
   //cart class//
   class Roll {
     constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
+      this.type = rollType;
+      this.glazing = rollGlazing;
+      this.size = packSize;
+      this.basePrice = basePrice;
     }
   }
   // Add a new instance of Roll to the cart array to use//
-  const roll = new Roll(rollType, selectedGlazing, selectedPackSize, rollBasePrice);
-  cart.push(roll); //add Roll instance to the array cart// 
+  const roll = new Roll(
+    rollType,
+    selectedGlazing,
+    selectedPackSize,
+    rollBasePrice
+  );
+  cart.push(roll); //add Roll instance to the array cart//
   console.log(cart); //print cart to console//
 }
 
