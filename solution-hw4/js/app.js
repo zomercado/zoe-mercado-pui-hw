@@ -83,8 +83,14 @@ calculatePrice();
 //create an empty cart array//
 let cart = []
 function addToCart () {
-  const selectedGlazing = document.getElementById("glazingOptions").value;
-  const selectedPackSizePrice = document.getElementById("packSizeOptions").value;
+  const selectedGlazingValue = document.getElementById("glazingOptions").value;
+  const selectedPackSizeValue = document.getElementById("packSizeOptions").value;
+
+  //so that the console.log prints the key instead of the value - link from StackOverflow below//
+  //https://stackoverflow.com/questions/9907419/how-to-get-a-key-in-a-javascript-object-by-its-value//
+  const selectedGlazing = Object.keys(glazingOptions).find(key => glazingOptions[key] == selectedGlazingValue);
+  const selectedPackSize = Object.keys(packSizeOptions).find(key => packSizeOptions[key] == selectedPackSizeValue);
+
   //cart class//
   class Roll {
     constructor(rollType, rollGlazing, packSize, basePrice) {
@@ -95,7 +101,7 @@ function addToCart () {
     }
   }
   // Add a new instance of Roll to the cart array to use//
-  const roll = new Roll(rollType, selectedGlazing, selectedPackSizePrice, rollBasePrice);
+  const roll = new Roll(rollType, selectedGlazing, selectedPackSize, rollBasePrice);
   cart.push(roll); //add Roll instance to the array cart// 
   console.log(cart); //print cart to console//
 }
