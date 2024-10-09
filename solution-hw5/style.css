@@ -1,0 +1,359 @@
+body {
+    align-items: center;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    padding-right: 80px;
+}
+
+.header-right {
+    flex-grow: 1;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.nav-item {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.nav-links a.active .nav-item {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+
+.nav-item:active, :visited {
+    transition: all 0.2s;
+}
+h3.subtitle {      
+    padding-top: 40px;
+    padding-bottom: 40px;    
+    text-align: center;
+    width: auto;
+    margin-right: 270px;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+/* index page */
+
+img.logo {
+    width: 400px;
+    padding: 20px 20px ;
+}
+
+hr.divider {
+    width: 100%;
+    border: none;
+    height: 4px;
+    background: black;
+}
+
+.main-content {
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    padding: 0px 100px 100px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.cinnammon-roll-block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 315px;
+    margin: 0 auto; 
+}
+
+/* yellow highlight on hover */
+
+.cinnammon-roll-block:hover {
+    background-color: yellow;
+    transition: all 0.2s;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caption {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 295px;
+    line-height: 0%;
+}
+
+.type{
+    line-height: 1px;
+}
+
+.price {
+    line-height: 1px;
+}
+
+
+/* bold product name on hover */
+.cinnammon-roll-block:hover .type {
+    font-weight: bold;
+}
+
+/* images in product gallery */
+.roll-img {
+    border: 5px solid black;
+    width: 285px;
+}
+
+/* images in shopping cart */
+.small-img {
+    width: 200px;
+    border: 5px solid black;
+}
+
+/* imgaes in product details */
+.large-img {
+    width: 600px;
+    border: 5px solid black;
+}
+
+.type {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* from Stack Overflow - Keeps the text color the same as its surroundings */
+}
+
+a h1.products-title {
+    text-transform: uppercase;
+    font-size: 18px;
+    text-emphasis: bold;
+    background-color: yellow;
+    padding: 5px 5px;
+    display: inline;
+}
+
+/*product detail page */
+
+.top-section{
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.dropdown {
+    text-align: left;
+    margin-left: 0px;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 20px;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 25px;
+    padding-bottom: 50px;
+}
+
+.vertical-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content select {
+    width: 250px;
+    border: 2px solid black;
+    padding: 7px;
+    font-size: 18px;
+}
+
+.dropdown-content {
+    padding-bottom: 20px;
+    flex-grow: 1;
+    font-size: 18px;
+}
+
+/* organize into 3 categories (top-section, dropdown, call-to-action)as a div and add padding, align-item: flex-start, center, flex-end*/
+
+.call-to-action {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: flex-end;
+    flex-grow: 1;
+    font-size: 20px;
+}
+
+.button-link {
+    display: inline-block;
+    cursor: pointer;
+    background-color: yellow;
+    color: black;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid black;
+    text-align: center;
+    text-decoration: none;
+}
+
+#price-detail-page {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.detail-caption {
+    max-width: 260px;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+.button-header {
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+
+/*shopping cart page */
+
+.shopping-page {
+    width: 100%;
+    align-items: center;
+}
+
+.item-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.checkout {
+    padding-bottom: 100px;
+    display: flex;
+    float: right;
+    align-items: right;
+}
+.checkout {
+    display: flex;
+    justify-content: flex-end; 
+    padding-bottom: 100px; 
+    padding-left: 520px;
+}
+
+.remove-btn {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.checkout .button {
+    margin-top: 0;
+    padding: 6px 18px;
+}
+
+.cart-divider {
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 4px;
+    background: black;
+    margin-bottom: 50px;
+    width: 55%;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.first-block {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    padding-right: 50px;
+}
+
+.customization {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.cart-price {
+    display: flex;
+    text-align: right;
+    margin: auto;
+    padding-left: 30px;
+    margin-top: 60px;
+    text-align: right;   
+    margin-left: auto; 
+}
+
+.total-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+}
+
+.total {
+    display: inline-block;
+    flex-direction: row;
+    gap: 100px;
+    padding-left: 270px;
+}
+
+.product-name,
+.glazing-type,
+.pack-size {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 295px;
+    line-height: 0%;
+}
