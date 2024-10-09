@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Shopping Cart Page</title>
+  <script defer src="js/rollsData.js"></script>
+  <script defer src="js/removeElement.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -29,40 +31,36 @@
       </div>
     </div>
   </header>
-<div class="shopping-page">
-  <div class="cart-items">
-     <!-- Template for Cart Item -->
-    <template id="cart-item-template">
-       <!-- Column 1 -->
-      <div class="item-card">
-        <div class="first-block">
-          <img class="small-img" src=""
-            alt="minimized image of delicious cinnammon roll">
-          <p class="remove-btn">Remove</p>
+  <div class="shopping-page">
+    <div class="cart-items">
+      <!-- Template for Cart Item -->
+      <template id="cart-item-template">
+        <!-- Column 1 -->
+        <div class="item-card">
+          <div class="first-block">
+            <img class="small-img" src="" alt="minimized image of delicious cinnammon roll">
+            <p class="remove-btn">Remove</p>
+          </div>
+          <!-- Column 2 -->
+          <div class="customization">
+            <p class="product-name"></p>
+            <p class="glazing-type"></p>
+            <p class="pack-size"></p>
+          </div>
+          <!-- Column 3 -->
+          <p class="cart-price"></p>
         </div>
-        <!-- Column 2 -->
-        <div class="customization">
-          <p class="product-name"></p>
-          <p class="glazing-type"></p>
-          <p class="pack-size"></p>
-        </div>
-         <!-- Column 3 -->
-        <p class="cart-price"></p>
-      </div>
-    </template>
+      </template>
 
-    <hr class="cart-divider">
-    <div class="total-price">
-      <p class="total">Total</p>
-      <p class="total">$ 29.94</p>
-    </div>
-    <div class="checkout">
-      <button class="button-link">Checkout</button>
+      <hr class="cart-divider">
+      <div class="checkout-section">
+        <p class="total-title">Total</p>
+        <p class="checkout-cost">20.95</p>
+      </div>
+      <div class="checkout">
+        <button class="button-link">Checkout</button>
+      </div>
     </div>
   </div>
-</div>
-<script src="rollsData.js"></script>
-<script src="app.js"></script>
 </body>
-
 </html>

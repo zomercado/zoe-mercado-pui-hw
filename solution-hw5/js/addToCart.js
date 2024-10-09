@@ -85,7 +85,8 @@ calculatePrice();
 let cart = [];
 function addToCart() {
   const selectedGlazingValue = document.getElementById("glazingOptions").value;
-  const selectedPackSizeValue = document.getElementById("packSizeOptions").value;
+  const selectedPackSizeValue =
+    document.getElementById("packSizeOptions").value;
 
   //so that the console.log prints the key instead of the value - link from StackOverflow below//
   //https://stackoverflow.com/questions/9907419/how-to-get-a-key-in-a-javascript-object-by-its-value//
@@ -120,62 +121,3 @@ function addToCart() {
 document.getElementById("addToCartBtn").addEventListener("click", addToCart);
 console.log("Roll Type: ", rollType);
 console.log("Selected Roll: ", selectedRoll);
-
-//HW 5 Start//
-// Do not hard-code the calculated price//
-
-const originalRoll = new Roll(
-  "Original",
-  "Sugar Milk",
-  1,
-  2.49
-);
-
-const walnutRoll = new Roll(
-  "Walnut",
-  "Vanilla Milk",
-  12,
-  39.90
-)
-
-const raisinRoll = new Roll(
-  "Raisin",
-  "Sugar Milk",
-  3,
-  8.97
-)
-
-const appleRoll = new Roll( 
-  "Apple",
-  "Original",
-  3,
-  10.47
-)
-
-cart.push(originalRoll);
-cart.push(walnutRoll);
-cart.push(raisinRoll);
-cart.push(appleRoll);
-
-function displayCartItem (Roll){
-  
-  const cartItemContainer = document.getElementByClass("cart-items");
-
-  const cartItemDiv = document.getElementByClass("cart-items");
-
-  // Add roll image
-  const rollImg = document.getElementById(`${imageFile}`);
-
-  // Add roll name
-
-  // Add glazing
-
-  // Add pack size
-
-  // Add item price (calculated)
-
-  // Add remove button
-  let template = document.getElementById("custom-paragraph");
-  let templateContent = template.content;
-  document.body.appendChild(templateContent);
-}
