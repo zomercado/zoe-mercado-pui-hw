@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script defer src="js/rollsData.js"></script>
+  <script defer src="js/addToCart.js"></script>
+  <title>Product Detail Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="header-left">
+        <a href="index.html">
+          <img class="logo" src="../assets/logo/logo-01.svg" alt="Bun Bun logo">
+        </a>
+      </div>
+      <div class="header-right">
+        <div class="nav-links">
+          <a href="product_details.html" class="active">
+            <p class="nav-item">Products</p>
+          </a>
+          <a href="shopping_cart.html">
+            <p class="nav-item">Cart</p>
+          </a>
+        </div>
+        <hr class="divider">
+        <h3 id="roll-heading" class="subtitle"></h3>  <!-- HEADING UPDATED WITH JS -->
+      </div>
+    </div>
+  </header>
+
+  <!-- header at top ending -->
+
+  <div class="main-content">
+    <div class="details">
+      <div class="detail-page-image">
+        <img id="detail-roll-image" class= "large-img" src="../assets/products/original-cinnamon-roll.jpg"
+          alt="enlarged image of delicious cinnammon roll">
+      </div>
+      <div class="vertical-details">
+        <div class="top-section">
+          <p class="detail-caption">Customize our delicious, hand-made cinammon roll to your liking!</p>
+        </div>
+        <div class="dropdown">
+          <p class="button-header">Glazing:</p>
+          <div class="dropdown-content">
+            <select name="glazing-content" id="glazingOptions" onchange="calculatePrice()">
+               <!-- JS will populate -->
+            </select>
+          </div>
+          <p class="button-header">Pack Size:</p>
+          <div class="dropdown-content">
+            <select name="pack-size" id="packSizeOptions" onchange="calculatePrice()">
+                <!-- JS will populate -->
+            </select>
+          </div>
+        </div>
+        <div class="call-to-action">
+          <p id="price-detail-page" class="price">$ 2.49</p>
+          <button id="addToCartBtn" class="button-link">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

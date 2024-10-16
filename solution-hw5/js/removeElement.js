@@ -102,6 +102,6 @@ const originalRoll = addNewRoll("Original", "Sugar milk", 1, 2.49);
 for (const roll of shoppingCart) {
   console.log("Processing roll:", roll);
   createElement(roll);
+
   updateTotalSum();
 }
-

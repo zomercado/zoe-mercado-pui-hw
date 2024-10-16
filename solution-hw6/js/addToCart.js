@@ -82,7 +82,9 @@ calculatePrice();
 
 //add to cart function//
 //create an empty cart array//
-let shoppingCart = [];
+
+let shoppingCart = JSON.parse(localStorage.getItem('shoppingCart')) || [];
+
 function addToCart() {
   const selectedGlazingValue = document.getElementById("glazingOptions").value;
   const selectedPackSizeValue =
@@ -115,6 +117,10 @@ function addToCart() {
   );
 shoppingCart.push(roll); //add Roll instance to the array cart//
   console.log(shoppingCart); //print cart to console//
+
+  // Store the updated cart in localStorage as a JSON string
+localStorage.setItem('shoppingCart', JSON.stringify(shoppingCart));
+console.log("Updated Cart: ", shoppingCart);
 }
 
 //event listener//
