@@ -265,4 +265,5 @@ In my next design, I will act on the map size critique - the large, detailed map
 I will act on the critique regarding user guidance for the horizontal scroll. Participants noted that clearer instructions are needed to encourage horizontal interaction with the content. To address this, I plan to add visual indicators, such as arrows or prompts, that explicitly instruct users to scroll sideways. By adding user guidance for the horizontal scroll, I aim to create a more intuitive experience that invites deeper exploration of the site without users feeling lost or frustrated.
 
 **Thrift Style Discovery Tool:**
-In response to the critique about articulating dislikes, I will incorporate a comment feature. This allows users to express their thoughts more freely, addressing the difficulty of explaining why certain items don’t appeal to them. By allowing for personalized feedback, the app will better cater to individual preferences and enhance user experience.
+
+In response to the critique about articulating dislikes, I will incorporate a comment feature. This allows users to express their thoughts more freely, addressing the difficulty of explaining why certain items don’t appeal to them. By allowing for personalized feedback, the app will better cater to individual preferences and aversive responses to describing pros and cons.
