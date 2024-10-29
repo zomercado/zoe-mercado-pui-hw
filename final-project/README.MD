@@ -254,13 +254,15 @@ Thrift Style Discovery Tool
 
 Digest the feedback you got in the lab (\~300 words). Indicate which critique you will act on in your next design and why you chose to incorporate/dismiss pieces of critique.
 
-Creole Language Map
+**Creole Language Map:**
 
-I have decided to proceed with this concept, as it generated the most enthusiasm among participants. Several critiques highlighted the confusing layout of the phrases/map page, which resembled a Venn diagram rather than a straightforward map. The card-flipping feature was well-received for its interactivity, replacing the less engaging speech bubble design. Additionally, the suggestion for hover functionality over countries is promising. However, I will opt to display phrases/map buttons only upon clicking a country to avoid cluttering the interface with pop-ups. If feasible, I may implement a feature where related African countries are highlighted when hovering over Caribbean nations, enhancing the exploration experience.
-In my next design, I will make Caribbean map the main figure on the page. The large, detailed map of the Caribbean will occupy the majority of the screen real estate, allowing users to clearly see individual countries and territories. In one corner of the screen, likely the bottom right, there would be a smaller thumbnail map of Africa. This would serve as a reference point for the origins of various Creole languages without distracting from the main Caribbean focus. This adjustment aligns with the core idea of exploring Caribbean islands in connection to Africa without overshadowing them.
+I have decided to proceed with this concept, as it generated the most enthusiasm. The suggestion for hover functionality over countries is promising. But, I will opt to display phrases/map buttons only upon clicking a country to avoid cluttering the interface with pop-ups. If time permits, I might implement a feature where related African countries are highlighted when hovering over Caribbean nations, enhancing the exploration experience.
 
-An Evolution of Soca Music
+In my next design, I will act on the map size critique - the large, detailed map of the Caribbean will occupy the majority of the screen real estate, allowing users to clearly see individual countries and territories. In one corner of the screen, likely the bottom right, there would be a smaller thumbnail map of Africa. This would serve as a reference point for the origins of various Creole languages without distracting from the main Caribbean focus. This adjustment aligns with the core idea of exploring Caribbean islands in connection to Africa without overshadowing them.
+
+**An Evolution of Soca Music:**
+
 I will act on the critique regarding user guidance for the horizontal scroll. Participants noted that clearer instructions are needed to encourage horizontal interaction with the content. To address this, I plan to add visual indicators, such as arrows or prompts, that explicitly instruct users to scroll sideways. By adding user guidance for the horizontal scroll, I aim to create a more intuitive experience that invites deeper exploration of the site without users feeling lost or frustrated.
 
-Thrift Style Discovery Tool
+**Thrift Style Discovery Tool:**
 In response to the critique about articulating dislikes, I will incorporate a comment feature. This allows users to express their thoughts more freely, addressing the difficulty of explaining why certain items don’t appeal to them. By allowing for personalized feedback, the app will better cater to individual preferences and enhance user experience.
