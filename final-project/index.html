@@ -7,73 +7,28 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
     <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="js/mapdata.js" defer></script>
+    
     <title>About Creole Connections</title>
 </head>
-
 <body>
     <nav>
         <div class="clickable-links" id="logo">
-            <a href="map_expo.html"><h1 class="heading">Creole Connections</h1></a>
+            <a href="index.html"><h1 class="heading">Creole Connections</h1></a>
         </div>
         <div class="clickable-links">
             <a href="learn_phases.html"><p class="nav-item">Learn Phrases</p></a>
-            <a href="map_expo.html"><p class="nav-item">Map Expo</p></a>
+            <a href="index.html"><p class="nav-item">Map Expo</p></a>
             <a href="about.html"><p class="nav-item">About</p></a>
         </div>
     </nav>
-    <div class="map-hi-fi">
-        <div class="overlap-wrapper">
-            <div class="overlap">
-                <div class="the-caribbean">
-                    <div class="overlap-group">
-                        <img class="AG" src="images/vector_images/AG.svg" />
-                        <img class="AI" src="images/vector_images/AI.svg" />
-                        <div class="div">
-                            <img class="AW" src="images/vector_images/AW.svg" />
-                            <img class="BQ" src="images/vector_images/BQ.svg" />
-                            <img class="BS" src="images/vector_images/BS.svg" />
-                            <img class="CO" src="images/vector_images/CO.svg" />
-                            <img class="CU" src="images/vector_images/CU.svg" />
-                            <img class="CW" src="images/vector_images/CW.svg" />
-                            <img class="DO" src="images/vector_images/DO.svg" />
-                            <img class="GD" src="images/vector_images/GD.svg" />
-                            <img class="GF" src="images/vector_images/GF.svg" />
-                            <img class="GY" src="images/vector_images/GY.svg" />
-                            <img class="HT" src="images/vector_images/HT.svg" />
-                            <img class="PA" src="images/vector_images/PA.svg" />
-                            <img class="SR" src="images/vector_images/SR.svg" />
-                            <img class="TT" src="images/vector_images/TT.svg" />
-                            <img class="VE" src="images/vector_images/VE.svg" />
-                        </div>
-                        <img class="BB" src="images/vector_images/BB.svg" />
-                        <img class="BL" src="images/vector_images/BL.svg" />
-                        <img class="DM" src="images/vector_images/DM.svg" />
-                        <img class="GP" src="images/vector_images/GP.svg" />
-                        <img class="JM" src="images/vector_images/JM.svg" />
-                        <img class="KN" src="images/vector_images/KN.svg" />
-                        <img class="KY" src="images/vector_images/KY.svg" />
-                        <img class="LC" src="images/vector_images/LC.svg" />
-                        <img class="MF" src="images/vector_images/MF.svg" />
-                        <img class="MQ" src="images/vector_images/MQ.svg" />
-                        <img class="MS" src="images/vector_images/MS.svg" />
-                        <img class="PR" src="images/vector_images/PR.svg" />
-                        <img class="SX" src="images/vector_images/SX.svg" />
-                        <img class="TC" src="images/vector_images/TC.svg" />
-                        <img class="VC" src="images/vector_images/VC.svg" />
-                        <img class="VG" src="images/vector_images/VG.svg" />
-                        <img class="VI" src="images/vector_images/VI.svg" />
-                        <div class="learn-phrase-button">
-                        </div>
-                    </div>
-                    <img class="BZ" src="images/vector_images/BZ.svg" />
-                </div>
-            </div>
-        </div>
+    <div class="map-container">
+      <div id="map"></div>
     </div>
-    <div id="map"></div>
+    
 </body>
 <footer>
     <div class="footer-content">

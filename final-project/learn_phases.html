@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +9,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="animation.js"></script>
-    <title>Learn Phrases</title>
+        <script src="js/populate.js"></script>
+        <title>Learn Phrases</title>
 </head>
 
 
@@ -62,79 +60,13 @@
             <div class="region-filters">
                 <button class="filter-btn">West</button>
                 <button class="filter-btn">Central</button>
+                <button class="filter-btn">East</button>
+                <button class="filter-btn">South</button>
             </div>
         </div>
         <section class="cards-grid">
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <div class="intro-vertical">
-                            <div class="name">
-                                <h2 class="word">MARASA</h2>
-                                <button class="flip-btn"><img src="images/vector_images/Flip Icon.svg"
-                                        alt="Flip Icon"></button>
-                            </div>
-                            <div class="intro">
-                                <div class="circle-pattern"></div>
-                                <div class="card-body-content">
-                                    <span class="label">Meaning</span>
-                                    <div class="dash-icon"></div>
-                                    <div class="definition">Twin</div>
-                                    <span class="label">Pronunciation</span>
-                                    <div class="dash-icon"></div>
-                                    <div class="phonetic-spelling">/maʁa.sa/</div>
-                                    <div class="pronunciation">"mah-rah-sah"</div>
-                                    <button class="audio-btn">
-                                        <img src="images/vector_images/Speaker.svg" alt="Play audio"
-                                            class="speaker-icon">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-back">
-                        <div class="intro-vertical">
-                            <div class="origin">
-                                <h2 class="word">ORIGIN</h2>
-                                <button class="flip-btn"><img src="images/vector_images/Takeaways/Light-Flip-Icon.svg"
-                                        alt="Flip Icon"></button>
-                            </div>
-                            <div class="back-intro">
-                                <div class="circle-pattern"></div>
-                                <div class="card-body-content">
-                                    <div class="location-info">
-                                        <div class="icon-wrapper">
-                                            <img class="location-icon" src="images/vector_images/Map Pin Icon.svg"
-                                                alt="Location Icon">
-                                        </div>
-                                        <span class="location-text">The Democratic Republic of Congo</span>
-                                    </div>
-                                    <div class="language-info">
-                                        <div class="icon-wrapper">
-                                            <img class="language-icon" src="images/vector_images/Language-Icon.svg"
-                                                alt="Language Icon">
-                                        </div>
-                                        <div class="language-details">
-                                            <span class="language-text">Lingala/Kikongo</span>
-                                            <i class="translation">Marasa → "Twin"</i>
-                                        </div>
-                                    </div>
-                                    <div class="source-section">
-                                        <span class="source-label">Source</span>
-                                        <a href="#" class="source-link">Facebook</a>
-                                    </div>
-                                </div>
-                                <img class="africa-map" src="images/vector_images/Takeaways/Congo.png"
-                                    alt="Map of Africa">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+  <!-- populated with JS and JSON -->
         </section>
-        <!-- Additional cards with different colors: red, pink, blue -->
     </div>
     
 </body>

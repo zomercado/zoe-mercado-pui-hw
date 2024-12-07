@@ -1,0 +1,150 @@
+{
+  "Card Content": [
+    {
+      "Phrase": "marasa",
+      "Origin Language": "Lingala/Kikongo",
+      "Original Word": "Mapasa → 'Twin'",
+      "African Location": "The Democratic Republic of Congo",
+      "African Region": ["Central"],
+      "Meaning": ["twin"],
+      "Countries": ["Haiti"],
+      "Tags": ["Food"],
+      "Phonetic Spelling": "/maʁa.sa/",
+      "Pronunciation": "mah-rah-sah",
+      "Source": "https://www.facebook.com/afrosocalove/videos/-haitian-creole-words-that-connect-to-kikongo-and-lingala-secure-your-asltour-ti/1725456244925828/"
+      },
+  {
+  "Phrase": "nyam",
+  "Origin Language": "Wolof/Fula/Manjaku/Pulaar/Luo",
+  "Original Word": "nyam",
+  "African Location": "Senegal, The Gambia, Guinea-Bissau, Kenya",
+  "African Region": ["West", "East"],
+  "Meaning": ["to eat ravenously or greedily", "to chew"],
+  "Countries": ["Jamaica", "Barbados"],
+  "Tags": ["Food"],
+  "Phonetic Spelling": "/njæm/",
+  "Pronunciation": "nyam",
+  "Source": "https://www.city-data.com/forum/americas/3037545-african-words-caribbean-creole-languages.html"
+  },
+  {
+  "Phrase": "Broni",
+  "Origin Language": "Akan",
+  "Original Word": "Oburoni",
+  "African Location": "Ghana",
+  "African Region": ["West"],
+  "Meaning": ["a white person"],
+  "Countries": ["Jamaica", "Trinidad"],
+  "Tags": ["People"],
+  "Phonetic Spelling": "/ˈbroʊni/",
+  "Pronunciation": "broh-nee",
+  "Source": "https://en.wikipedia.org/wiki/List_of_Jamaican_Patois_words_of_African_origin"
+  },
+  {
+  "Phrase": "Obeah",
+  "Origin Language": ["Igbo", "Akan (Ashanti Twi)"],
+  "Original Word": ["Obayi"],
+  "African Location": "Nigeria, Ghana",
+  "African Region": ["West"],
+  "Meaning": ["witchcraft"],
+  "Countries": ["Jamaica", "Trinidad"],
+  "Tags": ["Spirituality and Folklore"],
+  "Phonetic Spelling": "/ˈoʊbiə/",
+  "Pronunciation": "oh-bee-uh",
+  "Source": [
+  "https://en.wikipedia.org/wiki/List_of_Jamaican_Patois_words_of_African_origin",
+  "https://www.jamaicaglobalonline.com/the-jamaican-language/#:~:text=African%20loan%20words%20come%20from,is%20untidy%20or%20messed%20up."
+  ]
+  },
+  {
+  "Phrase": "Duppy/Adopi",
+  "Origin Language": ["Ga Language", "Kikongo"],
+  "Original Word": ["Adópé", "Ndoki"],
+  "African Location": "Ghana, The Democratic Republic of Congo",
+  "African Region": ["West", "Central"],
+  "Meaning": ["Demon", "Ghost"],
+  "Countries": ["Jamaica", "Barbados"],
+  "Tags": ["Spirituality and Folklore"],
+  "Phonetic Spelling": "/ˈdʌpi/",
+  "Pronunciation": "duh-pee",
+  "Source": "https://en.wikipedia.org/wiki/List_of_Jamaican_Patois_words_of_African_origin"
+  },
+  {
+  "Phrase": "Mumu",
+  "Origin Language": ["Akan", "Ewe", "Mende", "Yoruba"],
+  "Original Word": "Zumu",
+  "African Location": "Ghana, Togo, Sierra Leone, Nigeria",
+  "African Region": ["West"],
+  "Meaning": ["dumb", "stupid"],
+  "Countries": ["Jamaica"],
+  "Tags": ["Personality"],
+  "Phonetic Spelling": "/ˈmuːmuː/",
+  "Pronunciation": "moo-moo",
+  "Source": "https://en.wikipedia.org/wiki/List_of_Jamaican_Patois_words_of_African_origin"
+  },
+  {
+  "Phrase": "Casha",
+  "Origin Language": ["Akan", "English"],
+  "Original Word": ["Kasɛ́", "acacia"],
+  "African Location": "The Democratic Republic of Congo",
+  "African Region": ["Central"],
+  "Meaning": ["thorn"],
+  "Countries": ["Jamaica"],
+  "Tags": ["Plants, Animals, and Nature"],
+  "Phonetic Spelling": "/ˈkæʃə/",
+  "Pronunciation": "ka-sha",
+  "Source": "https://en.wikipedia.org/wiki/List_of_Jamaican_Patois_words_of_African_origin"
+  },
+  {
+  "Phrase": "Bafan",
+  "Origin Language": ["Akan"],
+  "Original Word": "Bɔfran",
+  "African Location": "Ghana",
+  "African Region": ["West"],
+  "Meaning": ["a baby or toddler", "an awkward or clumsy person"],
+  "Countries": ["Jamaica"],
+  "Tags": ["Personality"],
+  "Phonetic Spelling": "/bəˈfæn/",
+  "Pronunciation": "buh-fan",
+  "Source": "https://en.wikipedia.org/wiki/List_of_Jamaican_Patois_words_of_African_origin"
+  },
+  {
+  "Phrase": "Ginal",
+  "Origin Language": ["Akan (Ashanti Twi)"],
+  "Original Word": ["Gyegyefuo", "Gyegyeni"],
+  "African Location": "Ghana",
+  "African Region": ["West"],
+  "Meaning": ["Someone that is not taken seriously", "a stupid person", "A con-man (in Jamaica only)"],
+  "Countries": ["Jamaica"],
+  "Tags": ["Personality"],
+  "Phonetic Spelling": "/dʒiˈnæl/",
+  "Pronunciation": "jee-nal",
+  "Source": "https://en.wikipedia.org/wiki/List_of_Jamaican_Patois_words_of_African_origin"
+  },
+  {
+  "Phrase": "Kongkos",
+  "Origin Language": ["Akan"],
+  "Original Word": "Konkonsa",
+  "African Location": "Ghana",
+  "African Region": ["West"],
+  "Meaning": ["gossip"],
+  "Countries": ["Jamaica"],
+  "Tags": ["Actions"],
+  "Phonetic Spelling": "/ˈkɒŋkɒs/",
+  "Pronunciation": "kong-kos",
+  "Source": "https://en.wikipedia.org/wiki/List_of_Jamaican_Patois_words_of_African_origin"
+  },
+  {
+  "Phrase": "Backra",
+  "Origin Language": ["Efik"],
+  "Original Word": "Mbakára",
+  "African Location": "Ghana",
+  "African Region": ["West"],
+  "Meaning": ["white man"],
+  "Countries": ["Jamaica"],
+  "Tags": ["People"],
+  "Phonetic Spelling": "/ˈbækrə/",
+  "Pronunciation": "bak-ruh",
+  "Source": "https://en.wikipedia.org/wiki/List_of_Jamaican_Patois_words_of_African_origin"
+  }
+  ]
+  }
