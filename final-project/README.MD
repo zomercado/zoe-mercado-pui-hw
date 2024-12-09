@@ -68,7 +68,7 @@ Describe what important external tool you used (JavaScript library, Web API, ani
 
 3. GSAP
   * Why did you choose to use it over other alternatives? (2 sentences max)  
-  After looking up Javscript libraries for interactivity and animation GSAP was consistently one of the top results. It's free and very easy to implement because i wasn't looking for extremely complicated animations.
+  After looking up Javscript libraries for interactivity and animation GSAP was consistently one of the top results. It's free and very easy to implement because I wasn't looking for extremely complicated animations.
 
    * How you used it? (2 sentences max)
    I used to create the floating animations for countries in the about page. 
@@ -79,7 +79,8 @@ Describe what important external tool you used (JavaScript library, Web API, ani
 ## Part 4: Design Iteration
 
 Describe how you iterated on your prototypes, if at all, including any changes you made to your original design while you were implementing your website and the rationale for the changes. (4-8 sentences max)
-The original green background was replaced with a beige backdrop to improve accessibility and readability; green became a primary color instead. Color schemes were refined, inverting filter colors to black with beige text to enhance visual contrast. On the learn_phrases page, I eliminated the "flip to reveal" text, relying instead on intuitive interaction signifiers (the flip icon on each card) for minimalist design and to maximize screen space. A consistent navigation structure was added across all pages, providing clear pathways between the map expo, learn phrases, and about pages to improve overall user experience and site usability.
+
+The original green background was replaced with a beige backdrop to improve accessibility and readability; green became a primary color instead. Color schemes were refined, inverting filter colors to black with beige text to enhance visual contrast. On the learn_phrases page, I eliminated the "flip to reveal" text, relying instead on intuitive interaction signifiers (the flip icon on each card) for minimalist design and to maximize screen space. A consistent navigation structure was added across all pages, providing clear pathways between the map expo, learn phrases, and about pages to improve overall user experience and site usability. On the map expo page I added a hover tooltip that displays the country name, flag, and official language to provide more context on each country before they learn about their phrases.
 
 ## Part 5: Implementation Challenge
 
