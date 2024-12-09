@@ -4,10 +4,16 @@
   --pink-card: #B06B8D;
   --blue-card: #4F728B;
   --taupe-color: #965049;
+  --mustard-card: #A68A39; /* A warm mustard yellow */
+--teal-card: #4E7C7B;    /* A rich teal */
+--plum-card: #6C4F8B;    /* A deep plum purple */
+--amber-card: #B0763A;   /* A vibrant amber-orange */
+--slate-card: #586C7A;   /* A muted slate gray-blue */
+--light-grey-card:#D9D9D9;
+--dark-grey-card: #3D3D3D;
   --yellow-for-card:  #F4F1D0;
   --background-color: #FAF5E9;
-  --light-grey-card:#D9D9D9;
-  --dark-grey-card: #3D3D3D;
+
   --white: #FFFFFF;
   --black: #212222;
 }
@@ -331,8 +337,10 @@ footer {
 .filter-btn {
   padding: 7px 14px;
   border: 1px solid #333;
+  color: var(--yellow-for-card);
   border-radius: 20px;
   background: transparent;
+  background-color: var(--dark-grey-card);
   cursor: pointer;
   font-size: 12px;
   transition: all 0.2s ease;
@@ -350,7 +358,9 @@ footer {
 }
 
 .filter-btn:hover {
-  background: rgba(92, 124, 78, 0.1);
+    background: rgba(255, 255, 255, 0.1); /* Subtle glow */
+    border: 1px solid var(--yellow-for-card); /* Yellow matches highlight */
+    transform: scale(1.05); /* Slight scale-up for interactivity */ 
 }
 
 .filters {
@@ -360,6 +370,20 @@ footer {
     gap: 50px;
 }
 
+/* Group 1: Warm Tones */
+#green-card { background-color: var(--green-card); }
+#red-card { background-color: var(--red-card); }
+#amber-card { background-color: var(--amber-card); }
+
+/* Group 2: Cool Tones */
+#blue-card { background-color: var(--blue-card); }
+#teal-card { background-color: var(--teal-card); }
+#slate-card { background-color: var(--slate-card); }
+
+/* Group 3: Neutral Tones */
+#pink-card { background-color: var(--pink-card); }
+#taupe-card { background-color: var(--taupe-color); }
+#plum-card { background-color: var(--plum-card); }
 
 
 /* Cards Grid */
@@ -367,6 +391,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   gap: 32px;
+  justify-content: space-between;
 }
 
 .flip-btn {
@@ -378,15 +403,12 @@ footer {
   font-size: 20px;
 }
 
-.card-green .card-content { background-color: var(--color-green); }
-.card-red .card-content { background-color: var(--color-red); }
-.card-pink .card-content { background-color: var(--color-pink); }
-.card-blue .card-content { background-color: var(--color-blue); }
 
 /* card styling front*/
 .intro-vertical {
   width: 325px;
-  height: 425px;
+  /* Remove height: 425px; */
+  min-height: 425px; /* Change from fixed height to minimum height */
   position: relative;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
@@ -394,7 +416,6 @@ footer {
   overflow: hidden;
   transform: scale(0.8);
   transform-origin: top left;
-
 }
 
 .name {
@@ -414,7 +435,9 @@ footer {
 }
 
 .intro {
-  height: 335px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   background-color: #668744;
   padding: 24px;
   position: relative;
@@ -443,6 +466,7 @@ footer {
   font-size: 12px;
   color: #D9D9D9;
 }
+
 
 .dash-icon {
   width: 36px;
@@ -511,7 +535,7 @@ footer {
 /* Inner Content */
 .back-intro {
   background-color: #2F3030;
-  padding: 24px;
+  padding: 10px 24px;
   position: relative;
   overflow: hidden;
     height: calc(425px - 56px); /* Ensures content height matches the remaining space below the header */
@@ -603,7 +627,7 @@ footer {
 /* Africa Map */
 .africa-map {
   position: absolute;
-  bottom: 65px;
+  bottom: 45px;
   right: 10px;
   width: 240px;
   height: auto;
@@ -643,25 +667,17 @@ footer {
 /* MAP EXPO */
 
 #map {
-  width: 100%; height: 570px;
-}
-
-.map-container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-}
-
-#caribbean-map {
-  width: 100%;
-  height: 400px;
+  width: 100%; height: 700px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
-
+.map-container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
 
   /* responsive */
     
@@ -689,6 +705,7 @@ footer {
       transition: all 0.2s ease;
     }
 
+    
     }
 
      /* countries grid */

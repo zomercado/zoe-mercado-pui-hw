@@ -10,35 +10,82 @@ Please sign up for the study at [https://tinyurl.com/pui-study](https://tinyurl.
 
 Describe your website (300 words).
 
-* What is the purpose of your website?   
+* What is the purpose of your website?  
+Creole Connections is an innovative digital platform that explores the rich linguistic tapestry connecting Caribbean Creole dialects to their African linguistic roots. Through an interactive, geographically-driven map, the website invites users to journey through the intricate language connections between Caribbean nations and African regions.
+The platform serves a dual purpose: educational exploration and cultural preservation. By visualizing language origins through dynamic, colorful interfaces, Creole Connections transforms linguistic research into an engaging, accessible experience. Users can navigate through an immersive map interface, discovering how languages like Haitian Creole and Jamaican Patois evolved from African languages such as Yoruba and Twi.
+
 * Who is the target audience?  
-* What information do you convey with your website?   
+This resource is designed for language enthusiasts, cultural researchers, curious learners, and diaspora communities with ties to the region who want to deepen their understanding of the linguistic connections to Africa.
+
+* What information do you convey with your website?  
+Words used in different caribbean countries and the language and regions that they derive from in Africa. The profound influence of African languages on the linguistic heritage of the Caribbean.
+
 * How is it interesting and engaging? 
+The website offers multiple interactive experiences:
+
+Geographic Exploration: An interactive map revealing linguistic migrations and connections
+Phrase Learning: Flip-card functionality and audio buttons allowing deep dives into specific linguistic nuances
+Filtering Capabilities: Multi-select filters enabling precise language and regional investigations
+
+The website's design prioritizes user engagement through:
+
+Animated country grids with floating icons
+Hover-responsive visualizations - as you hover the grid shifts in the direction of your mouse
+Intuitive navigation
+Rich, contextual information about language evolution
 
 ## Part 2: User Interaction
 
 How a user would interact with your website? For each step, briefly but clearly state the interaction type & how we should reproduce it.
 
-1. Interaction type. Click on X on page Y / scroll on page X, etc.  
-2. 
+1. Interaction type: Click on toggle icons on index.html to select a country to learn about / hover over toggle icons on index.html to reveal country name, flag, and language / scroll on index.html to explore the map, etc.  
+2. Interaction type: Search via the search bar on learn_phrases.html / click on filter buttons on index.html to filter language cards by tag or region / click on cards on learn_phrases.html to flip between front/back revealing more context about the origins / click on audio button icon on learn_phrases.html to play English pronunciation.  
+3. Interaction type: Hover over country icons on about.html to move cards grid in the direction of mouse. 
+4. Interaction type: Hover over navigation links in the header and footer (ex: Github, Email, LinkedIn, and links between the 3 html pages). 
 
 ## Part 3: External Tool
 
 Describe what important external tool you used (JavaScript library, Web API, animations, or other). Following the bulleted list format below, reply to each of the prompts.
 
-1. Name of tool1  
-   * Why did you choose to use it over other alternatives? (2 sentences max)  
-   * How you used it? (2 sentences max)  
-   * What does it add to your website? (2 sentences max)  
-2. Name of tool2
+1. Speech Synthesis
+   * Why did you choose to use it over other alternatives? (2 sentences max)
+   I chose it because it was accessible and required minimal set up. It was also free!
+
+   * How you used it? (2 sentences max) 
+   I used it in the learn_phrases,html page to create audio pronunciation of each word. 
+
+   * What does it add to your website? (2 sentences max)  It adds another level of engagement and interactivity and brings the words to life. It also improves accessibility for those with limited sight. 
+
+2. Leaflet
+   * Why did you choose to use it over other alternatives? (2 sentences max)
+   It's the most widely used map interface with lots of customization features, and it's free!
+   
+   * How you used it? (2 sentences max)
+   I used it to create the map expo of the Caribbean, with country-specific click functionality. 
+
+   * What does it add to your website? (2 sentences max)
+    This visual tool adds crucial geographic context, helping users understand the origin of each Creole dialect.
+
+3. GSAP
+  * Why did you choose to use it over other alternatives? (2 sentences max)  
+  After looking up Javscript libraries for interactivity and animation GSAP was consistently one of the top results. It's free and very easy to implement because i wasn't looking for extremely complicated animations.
+
+   * How you used it? (2 sentences max)
+   I used to create the floating animations for countries in the about page. 
+
+   * What does it add to your website? (2 sentences max)
+   It adds extra interactivity for the about page, and it transforms the page from a static display to a dynamic, engaging experience.
 
 ## Part 4: Design Iteration
 
 Describe how you iterated on your prototypes, if at all, including any changes you made to your original design while you were implementing your website and the rationale for the changes. (4-8 sentences max)
+The original green background was replaced with a beige backdrop to improve accessibility and readability; green became a primary color instead. Color schemes were refined, inverting filter colors to black with beige text to enhance visual contrast. On the learn_phrases page, I eliminated the "flip to reveal" text, relying instead on intuitive interaction signifiers (the flip icon on each card) for minimalist design and to maximize screen space. A consistent navigation structure was added across all pages, providing clear pathways between the map expo, learn phrases, and about pages to improve overall user experience and site usability.
 
 ## Part 5: Implementation Challenge
 
 What challenges did you experience in implementing your website? (2-4 sentences max)
+
+My primary technical hurdles included geographically constraining the interactive map to focus specifically on the Caribbean region, rather than displaying the entire world. I also faced significant content challenges: sourcing varied linguistic data across different countries and developing an intuitive information architecture that would make sense for users. Additionally, I encountered technical complexities in populating JSON data for cards and automating responsive card spacing, especially when aligning the African map with cards of varying content dimensions.
 
 ## Part 6: Generative AI Use and Reflection
 
