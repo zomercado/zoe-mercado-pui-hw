@@ -1,5 +1,4 @@
 //MAP//
-
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize the map and center it on the Caribbean
     const map = L.map('map', {
@@ -100,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Optional: Add interactivity, such as a click event
     map.on('click', function(e) {
+      
         alert(`You clicked the map at ${e.latlng}`);
     });
   });
