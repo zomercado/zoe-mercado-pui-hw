@@ -95,7 +95,7 @@ Describe how you used Generative AI tools to create this final project (a page m
 
 
 
-### ChatGPT Usage
+### ChatGPT and Perplexity Usage
 * It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that it matched my expectations and plan in FP2 in that it provided valuable assistance in debugging and troubleshooting. As anticipated, ChatGPT helped me quickly identify errors in my code, suggested potential fixes, and offered clarifications on syntax issues. This significantly reduced the time I spent sifting through code and error messages, allowing me to focus more on higher-level functionality and design improvements.
 
 * It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that I found myself using it more than expected for guidance on coding best practices and refining user interface interactions. While I had initially planned to limit its use in these areas, I discovered that its suggestions for structuring complex algorithms and improving code efficiency were particularly helpful.
@@ -108,22 +108,24 @@ Describe how you used Generative AI tools to create this final project (a page m
 Pros: Rapid problem-solving for debugging issues, access to a wide range of coding knowledge, time-saving for routine tasks and syntax queries.
 Cons: Occasional inaccuracies in complex project-specific contexts, over-reliance on AI-generated solutions for debugging, need for careful validation of suggestions to ensure they fit the project's specific requirements.
 
+
 ***Usage Experiences by Project Aspects***
 
-| Ratings | design | plan | write code | debug | documentation |
-| :---- | :---- | :---- | :---- | :---- | :---- |
-| Usage<sup>1</sup> | \[no\] because I wanted to maintain control over the overall design | \[no\] because I preferred to plan the project structure myself | \[yes\] because I used it for guidance on best practices and complex algorithms | \[yes\] because it significantly aided in identifying and fixing bugs | \[no\] because I added comments myself along the way |
-| Reduce/Improve Productivity<sup>2</sup> | \[rating\] because … | \[rating\] because … | \[rating\] because … | \[rating\] because … | \[rating\] because … |
-[1] I used / did not use this tool for X aspect of the project because …  
-[2] This tool makes my productivity for X aspect (1-Much Reduced, 2-Reduced, 3-Slightly Reduced, 4-Not Reduced nor Improved, 5-Slightly Improved, 6-Improved, 7-Much Improved)
+| Ratings                                | design                                | plan                                  | write code                             | debug                                 | documentation                        |
+| -------------------------------------- | ------------------------------------- | ------------------------------------- | -------------------------------------- | ------------------------------------- | ------------------------------------- |
+| **Usage**<sup>1</sup>                  | [no] because I wanted to maintain control over the overall design | [no] because I preferred to plan the project structure myself | [yes] because I used it for guidance on best practices and complex algorithms | [yes] because it significantly aided in identifying and fixing bugs | [no] because I added comments myself along the way |
+| **Reduce/Improve Productivity**<sup>2</sup> | [5] because AI helped me with the technical aspects, allowing me to allocate more attention to the design | [5] because I was able to allocate more attention to planning with the help of the tool | [6] because it helped streamline coding practices and provided best practices, improving efficiency | [7] because it provided clear insights and tools, saving significant time on debugging | [4] because it didn’t make a noticeable impact on documentation work, as I preferred to handle it manually |
+
+
+
 
 ***Prompts and Chat History Links***
 
 Attach all the prompts you’ve used (e.g., for ChatGPT you can anonymously [share](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) your chat history).
 
+I have the same responses and engagement with both platforms:
+
 https://chatgpt.com/share/6757e763-a654-8002-8807-d7abc5e47c59
-
-
 https://www.perplexity.ai/search/how-can-i-make-it-so-that-each-Unb1CE3JS8eDL3z1A6dhDQ
 
 
