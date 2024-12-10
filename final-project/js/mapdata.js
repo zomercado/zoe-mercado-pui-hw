@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         language: "English",
         flagUrl:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Jamaica.svg/320px-Flag_of_Jamaica.svg.png",
-        learnPage: "learn_phrases?jamaica",
+        learnPage: "learn_phrases.html?country=jamaica",
       },
   
       {
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
           language: "English",
         flagUrl:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Flag_of_Barbados.svg/320px-Flag_of_Barbados.svg.png",
-        learnPage: "learn_phrases?barbados",
+        learnPage: "learn_phrases.html?country=barbados",
       },
       {
         name: "Haiti",
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
           language: "Haitian Creole",
         flagUrl:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Flag_of_Haiti.svg/320px-Flag_of_Haiti.svg.png",
-        learnPage: "learn_phrases?haiti",
+        learnPage: "learn_phrases.html?country=haiti",
       },
   
       {
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
       language: "English",
         coordinates: [10.7636, -61.3200781],
         flagUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Trinidad_and_Tobago.svg/1600px-Flag_of_Trinidad_and_Tobago.svg.png",  
-        learnPage: "learn_phrases?trinidadtobago",
+        learnPage: "learn_phrases.html?country=trinidadtobago",
       },
     ];
   
@@ -103,3 +103,15 @@ document.addEventListener('DOMContentLoaded', () => {
         alert(`You clicked the map at ${e.latlng}`);
     });
   });
+
+
+  // Get the URL parameters
+const urlParams = new URLSearchParams(window.location.search);
+const selectedCountry = urlParams.get('country');
+
+// Use the selected country to filter the content
+if (selectedCountry) {
+  // Call your existing filterContentByCountry function
+  filterContentByCountry(selectedCountry);
+}
+

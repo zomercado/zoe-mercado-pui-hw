@@ -8,12 +8,10 @@
 --teal-card: #4E7C7B;    /* A rich teal */
 --plum-card: #6C4F8B;    /* A deep plum purple */
 --amber-card: #B0763A;   /* A vibrant amber-orange */
---slate-card: #586C7A;   /* A muted slate gray-blue */
 --light-grey-card:#D9D9D9;
 --dark-grey-card: #3D3D3D;
   --yellow-for-card:  #F4F1D0;
   --background-color: #FAF5E9;
-
   --white: #FFFFFF;
   --black: #212222;
 }
@@ -259,10 +257,12 @@ footer {
     font-weight: 300;
 }
 
+/* start */
+
 .search-bar {
   position: relative;
   max-width: 380px;
-  margin: 20px 0;
+  margin: 20px 0; 
 }
 
 .search-bar label {
@@ -274,29 +274,33 @@ footer {
   overflow: hidden;
   clip: rect(0,0,0,0);
   border: 0;
-}  
-
+}
 
 .search-bar input {
   width: 100%;
-  padding: 12px 12px 12px 44px;
-  font-size: 16px;
-  border: none;
-  border-bottom: 1px solid #000;
-  background-color: transparent;
-  transition: border-color 0.3s ease;
-}
+    padding: 12px 12px 12px 44px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    transition: all 0.3s ease;
+  }
 
-.search-bar input::placeholder {
-  color: #666;
-  opacity: 0.7;
-}
+  .search-bar input::placeholder {
+    color: #666;
+    opacity: 0.7;
+  }
+  
+  .search-bar input:focus {
+    outline: none;
+    border-bottom: 2px solid #668744;
+    box-shadow: 0 2px 0 #668744;
+  }
 
-.search-bar input:focus {
-  outline: none;
-  border-bottom: 2px solid #668744;
-}
-
+  .search-bar:hover input {
+    border-bottom-color: #668744;
+  }
+  
 .search-icon {
   position: absolute;
   left: 12px;
@@ -308,10 +312,34 @@ footer {
   pointer-events: none;
 }
 
-/* Optional hover effect */
-.search-bar:hover input {
-  border-bottom-color: #668744;
+#countryDropdown {
+  position: absolute;
+  width: 100%;
+  font-size: 12px;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: var(--yellow-for-card);
+  border: 1px solid #668744;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 10;
+  border-radius: 0 0 8px 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none; /* Hidden by default */
 }
+
+#countryDropdown div {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#countryDropdown div:hover {
+  background-color: rgba(102, 135, 68, 0.1);
+}
+
+
 
 .filter-header {
   display: flex;
@@ -429,6 +457,7 @@ footer {
   overflow: hidden;
   transform: scale(0.8);
   transform-origin: top left;
+  background-color: var(--green-card);
 }
 
 .name {
@@ -749,4 +778,3 @@ footer {
      
   }
 
-  

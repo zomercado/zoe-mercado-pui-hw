@@ -7,111 +7,172 @@ document.addEventListener("DOMContentLoaded", () => {
       const filterButtons = document.querySelectorAll(".filter-btn");
       let activeFilters = new Set(); // Track active filters
 
+      // Country Search Functionality
+      const countrySearch = document.getElementById('countrySearch');
+      const countryDropdown = document.getElementById('countryDropdown');
+      
+      // Extract unique Caribbean countries
+      const uniqueCountries = [...new Set(cardData.flatMap(card => card.Countries || []))].sort();
+
+      // Populate country dropdown
+      function populateCountryDropdown(filter = '') {
+        countryDropdown.innerHTML = ''; // Clear existing dropdown
+        const filteredCountries = uniqueCountries.filter(country => 
+          country.toLowerCase().includes(filter.toLowerCase())
+        );
+
+        if (filteredCountries.length > 0) {
+          filteredCountries.forEach(country => {
+            const countryItem = document.createElement('div');
+            countryItem.textContent = country;
+            countryItem.addEventListener('click', () => {
+              countrySearch.value = country;
+              countryDropdown.style.display = 'none';
+              filterCardsByCountry(country);
+            });
+            countryDropdown.appendChild(countryItem);
+          });
+          countryDropdown.style.display = 'block';
+        } else {
+          countryDropdown.style.display = 'none';
+        }
+      }
+
+      // Country search input event
+      if (countrySearch) {
+        countrySearch.addEventListener('input', (e) => {
+          populateCountryDropdown(e.target.value);
+        });
+      }
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', (e) => {
+        if (countryDropdown && countrySearch && 
+            !countrySearch.contains(e.target) && 
+            !countryDropdown.contains(e.target)) {
+          countryDropdown.style.display = 'none';
+        }
+      });
+
+      // Function to filter cards by country
+      function filterCardsByCountry(selectedCountry) {
+        const cards = document.querySelectorAll('.card');
+        
+        cards.forEach(card => {
+          const countries = card.dataset.countries 
+            ? card.dataset.countries.split(',').map(c => c.trim())
+            : [];
+          
+          if (countries.includes(selectedCountry)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
       // Populate the cards
       cardData.forEach((card) => {
         const cardHTML = `
-                     <div class="card" 
-     data-tags="${card.Tags ? card.Tags.join(",") : ""}"
-     data-african-region="${
-       card["African Region"] ? card["African Region"].join(",") : ""
-     }">
-  <div class="card-inner">
-    <div class="card-front">
-      <div class="intro-vertical">
-        <div class="name">
-          <h2 class="word">${card.Phrase}</h2>
-          <button class="flip-btn"><img src="images/vector_images/Flip Icon.svg" alt="Flip Icon"></button>
-        </div>
-        <div class="intro">
-          <div class="circle-pattern"></div>
-          <div class="card-body-content">
-            <span class="label">Meaning</span>
-            <div class="dash-icon"></div>
-            <div class="definition">${
-              Array.isArray(card.Meaning)
-                ? card.Meaning.join(", ")
-                : card.Meaning
-            }</div>
-            <span class="label">Pronunciation</span>
-            <div class="dash-icon"></div>
-            <div class="phonetic-spelling">${
-              Array.isArray(card["Phonetic Spelling"])
-                ? card["Phonetic Spelling"].join(", ")
-                : card["Phonetic Spelling"]
-            }</div>
-            <div class="pronunciation">${
-              Array.isArray(card["Pronunciation"])
-                ? card["Pronunciation"].join(", ")
-                : card["Pronunciation"]
-            }</div>
-            <button class="audio-btn" data-phrase="${card.Phrase}">
-              <img src="images/vector_images/Speaker.svg" alt="Play audio for ${card.Phrase}" class="speaker-icon">
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card-back">
-      <div class="intro-vertical">
-        <div class="origin">
-          <h2 class="word">ORIGIN</h2>
-          <button class="flip-btn"><img src="images/vector_images/Takeaways/Light-Flip-Icon.svg" alt="Flip Icon"></button>
-        </div>
-        <div class="back-intro">
-          <div class="circle-pattern"></div>
-          <div class="card-body-content">
-            <div class="location-info">
-              <div class="icon-wrapper">
-                <img class="location-icon" src="images/vector_images/Map Pin Icon.svg" alt="Location Icon">
+          <div class="card" 
+               data-tags="${card.Tags ? card.Tags.join(",") : ""}"
+               data-african-region="${card["African Region"] ? card["African Region"].join(",") : ""}"
+               data-countries="${card.Countries ? card.Countries.join(",") : ""}">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="intro-vertical">
+                  <div class="name">
+                    <h2 class="word">${card.Phrase}</h2>
+                    <button class="flip-btn"><img src="images/vector_images/Flip Icon.svg" alt="Flip Icon"></button>
+                  </div>
+                  <div class="intro">
+                    <div class="circle-pattern"></div>
+                    <div class="card-body-content">
+                      <span class="label">Meaning</span>
+                      <div class="dash-icon"></div>
+                      <div class="definition">${
+                        Array.isArray(card.Meaning)
+                          ? card.Meaning.join(", ")
+                          : card.Meaning
+                      }</div>
+                      <span class="label">Pronunciation</span>
+                      <div class="dash-icon"></div>
+                      <div class="phonetic-spelling">${
+                        Array.isArray(card["Phonetic Spelling"])
+                          ? card["Phonetic Spelling"].join(", ")
+                          : card["Phonetic Spelling"]
+                      }</div>
+                      <div class="pronunciation">${
+                        Array.isArray(card["Pronunciation"])
+                          ? card["Pronunciation"].join(", ")
+                          : card["Pronunciation"]
+                      }</div>
+                      <button class="audio-btn" data-phrase="${card.Phrase}">
+                        <img src="images/vector_images/Speaker.svg" alt="Play audio for ${card.Phrase}" class="speaker-icon">
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <span class="location-text">${
-                Array.isArray(card["African Location"])
-                  ? card["African Location"].join(", ")
-                  : card["African Location"]
-              }</span>
+              <div class="card-back">
+                <div class="intro-vertical">
+                  <div class="origin">
+                    <h2 class="word">ORIGIN</h2>
+                    <button class="flip-btn"><img src="images/vector_images/Takeaways/Light-Flip-Icon.svg" alt="Flip Icon"></button>
+                  </div>
+                  <div class="back-intro">
+                    <div class="circle-pattern"></div>
+                    <div class="card-body-content">
+                      <div class="location-info">
+                        <div class="icon-wrapper">
+                          <img class="location-icon" src="images/vector_images/Map Pin Icon.svg" alt="Location Icon">
+                        </div>
+                        <span class="location-text">${
+                          Array.isArray(card["African Location"])
+                            ? card["African Location"].join(", ")
+                            : card["African Location"]
+                        }</span>
+                      </div>
+                      <div class="language-info">
+                        <div class="icon-wrapper">
+                          <img class="language-icon" src="images/vector_images/Language-Icon.svg" alt="Language Icon">
+                        </div>
+                        <div class="language-details">
+                          <span class="language-text">${
+                            Array.isArray(card["Origin Language"])
+                              ? card["Origin Language"].join(", ")
+                              : card["Origin Language"]
+                          }</span>
+                          <i class="translation">${
+                            Array.isArray(card["Original Word"])
+                              ? card["Original Word"].join(", ")
+                              : card["Original Word"]
+                          }"</i>
+                        </div>
+                      </div>
+                      <div class="source-section">
+                        <span class="source-label">Source:</span>
+                        ${Array.isArray(card.Source)
+                          ? card.Source.map((sourceUrl) => {
+                              return `
+                                <a href="${sourceUrl}" class="source-link" target="_blank">
+                                  ${extractWebsiteName(sourceUrl)}
+                                </a>
+                              `;
+                            }).join('')
+                          : `
+                            <a href="${card.Source}" class="source-link" target="_blank">
+                              ${extractWebsiteName(card.Source)}
+                            </a>
+                          `}
+                      </div>
+                    </div>
+                    <img class="africa-map" src="images/vector_images/Takeaways/Congo.png" alt="Map of Africa">
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="language-info">
-              <div class="icon-wrapper">
-                <img class="language-icon" src="images/vector_images/Language-Icon.svg" alt="Language Icon">
-              </div>
-              <div class="language-details">
-                <span class="language-text">${
-                  Array.isArray(card["Origin Language"])
-                    ? card["Origin Language"].join(", ")
-                    : card["Origin Language"]
-                }</span>
-                <i class="translation">${
-                  Array.isArray(card["Original Word"])
-                    ? card["Original Word"].join(", ")
-                    : card["Original Word"]
-                }"</i>
-              </div>
-            </div>
-<div class="source-section">
-  <span class="source-label">Source:</span>
-  ${Array.isArray(card.Source)
-    ? card.Source.map((sourceUrl) => {
-        return `
-          <a href="${sourceUrl}" class="source-link" target="_blank">
-            ${extractWebsiteName(sourceUrl)}
-          </a>
-        `;
-      }).join('')  // Remove <br> and concatenate the links
-    : `
-      <a href="${card.Source}" class="source-link" target="_blank">
-        ${extractWebsiteName(card.Source)}
-      </a>
-    `}
-</div>
-
-          </div>
-          <img class="africa-map" src="images/vector_images/Takeaways/Congo.png" alt="Map of Africa">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
+          </div>`;
         cardsGrid.innerHTML += cardHTML;
       });
 
@@ -178,10 +239,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
-    })
-    
-
-    .catch((error) => console.error("Error loading card data:", error));
+  })
+  .catch((error) => console.error("Error loading card data:", error));
 });
 
 // TEXT-TO-SPEECH FUNCTION - https://dev.to/devsmitra/convert-text-to-speech-in-javascript-using-speech-synthesis-api-223g
@@ -210,8 +269,6 @@ function speak(text) {
   }
 }
 
-// Call the function after populating the cards
-implementSearch();
  
 
 function adjustCardHeights() {

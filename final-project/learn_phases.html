@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
         <script src="js/populate.js"></script>
         <title>Learn Phrases</title>
 </head>
@@ -22,7 +23,7 @@
             </a>
         </div>
         <div class="clickable-links">
-            <a href="learn_phases.html">
+            <a href="learn_phrases.html">
                 <p class="nav-item">Learn Phrases</p>
             </a>
             <a href="index.html">
@@ -37,8 +38,8 @@
         <div class="search-bar">
             <label for="search-input">Search by Caribbean Country</label>
             <img src="images/vector_images/Search Icon.svg" alt="magnifying glass search icon" class="search-icon">
-            <input type="search-input" id="search-input" placeholder="Search by Caribbean Country">
-            <div id="search-results"></div>
+            <input type="text" id="countrySearch" placeholder="Search by Caribbean Country">
+            <ul id="countryDropdown"></ul>
           </div>
         <div class="filter-header">
             <span class="filter-label">Filters</span>
