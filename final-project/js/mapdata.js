@@ -100,10 +100,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Optional: Add interactivity, such as a click event
     map.on('click', function(e) {
       
-        alert(`You clicked the map at ${e.latlng}`);
+        alert(`You clicked the map at ${e.latlng}. Try clicking on a pin icon.`);
     });
   });
-
 
   // Get the URL parameters
 const urlParams = new URLSearchParams(window.location.search);
