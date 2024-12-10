@@ -87,13 +87,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 }"</i>
               </div>
             </div>
-            <div class="source-section">
-              <span class="source-label">Source</span>
-              <a href="#" class="source-link">Facebook</a>
-              <a href="${
-                Array.isArray(card.Source) ? card.Source[0] : card.Source
-              }" class="source-link" target="_blank"></a>
-            </div>
+<div class="source-section">
+  <span class="source-label">Source:</span>
+  ${Array.isArray(card.Source)
+    ? card.Source.map((sourceUrl) => {
+        return `
+          <a href="${sourceUrl}" class="source-link" target="_blank">
+            ${extractWebsiteName(sourceUrl)}
+          </a>
+        `;
+      }).join('')  // Remove <br> and concatenate the links
+    : `
+      <a href="${card.Source}" class="source-link" target="_blank">
+        ${extractWebsiteName(card.Source)}
+      </a>
+    `}
+</div>
+
           </div>
           <img class="africa-map" src="images/vector_images/Takeaways/Congo.png" alt="Map of Africa">
         </div>
@@ -220,4 +230,28 @@ function adjustCardHeights() {
           backContent.style.height = '';
       }
   });
+}
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
+
+function extractWebsiteName(url) {
+  try {
+    const hostname = new URL(url).hostname; // Get the hostname, e.g., "en.wikipedia.org"
+    const parts = hostname.split('.');      // Split the hostname by dots
+
+    let siteName = '';
+    if (parts.length > 2) {
+      siteName = parts[1]; // Extract the main domain, e.g., "wikipedia" from "en.wikipedia.org"
+    } else {
+      siteName = parts[0]; // For domains like "example.com", just return "example"
+    }
+
+    // Capitalize the first letter of the site name
+    return capitalizeFirstLetter(siteName);
+  } catch (error) {
+    console.error("Invalid URL:", url);
+    return "Unknown";  // Fallback for invalid URLs
+  }
 }
