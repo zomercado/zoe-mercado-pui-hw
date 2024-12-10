@@ -38,6 +38,7 @@ Rich, contextual information about language evolution
 
 How a user would interact with your website? For each step, briefly but clearly state the interaction type & how we should reproduce it.
 
+
 1. Interaction type: Click on toggle icons on index.html to select a country to learn about / hover over toggle icons on index.html to reveal country name, flag, and language / scroll on index.html to explore the map, etc.  
 2. Interaction type: Search via the search bar on learn_phrases.html / click on filter buttons on index.html to filter language cards by tag or region / click on cards on learn_phrases.html to flip between front/back revealing more context about the origins / click on audio button icon on learn_phrases.html to play English pronunciation.  
 3. Interaction type: Hover over country icons on about.html to move cards grid in the direction of mouse. 
@@ -92,20 +93,27 @@ My primary technical hurdles included geographically constraining the interactiv
 
 Describe how you used Generative AI tools to create this final project (a page max, \~500 words).
 
+
+
 ### ChatGPT Usage
-* It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that …  
-* It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that …  
-* I critiqued/evaluated the generated suggestions before incorporation by … For example, this tool once suggested … but I modified/rejected the suggestion because …  
-* I accepted the generations when … This tool did/did not influence my final design and implementation plan because … For example, this tool once suggested … and I adjusted my design according to the suggestion because … 
-* The pros and cons of using this Generative AI tool: …
+* It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that it matched my expectations and plan in FP2 in that it provided valuable assistance in debugging and troubleshooting. As anticipated, ChatGPT helped me quickly identify errors in my code, suggested potential fixes, and offered clarifications on syntax issues. This significantly reduced the time I spent sifting through code and error messages, allowing me to focus more on higher-level functionality and design improvements.
+
+* It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that I found myself using it more than expected for guidance on coding best practices and refining user interface interactions. While I had initially planned to limit its use in these areas, I discovered that its suggestions for structuring complex algorithms and improving code efficiency were particularly helpful.
+
+* I critiqued/evaluated the generated suggestions before incorporation by first checking if I understood the code and what was happening. For example, this tool once suggested a complex algorithm for filtering that I didn't truly understand but I modified/rejected the suggestion because I wanted to use code that makes sense to me.
+
+* I accepted the generations when they provided clear, logical solutions that aligned with my project objectives and coding standards.  This tool did influence my final design and implementation plan because it offered alternative perspectives and approaches I hadn't considered, particularly in areas of code optimization and error handling. Once I couldn't figure out how to debug using the console or inspect feature I went to ChatGPT and it found the error significantly faster.
+
+* The pros and cons of using this Generative AI tool:
+Pros: Rapid problem-solving for debugging issues, access to a wide range of coding knowledge, time-saving for routine tasks and syntax queries.
+Cons: Occasional inaccuracies in complex project-specific contexts, over-reliance on AI-generated solutions for debugging, need for careful validation of suggestions to ensure they fit the project's specific requirements.
 
 ***Usage Experiences by Project Aspects***
 
-| Ratings | design | plan | write code | debug | \_ (other?) |
+| Ratings | design | plan | write code | debug | documentation |
 | :---- | :---- | :---- | :---- | :---- | :---- |
-| Usage<sup>1</sup> | \[yes/no\] because … | \[yes/no\] because … | \[yes/no\] because … | \[yes/no\] because … | \[yes/no\] because … |
+| Usage<sup>1</sup> | \[no\] because I wanted to maintain control over the overall design | \[no\] because I preferred to plan the project structure myself | \[yes\] because I used it for guidance on best practices and complex algorithms | \[yes\] because it significantly aided in identifying and fixing bugs | \[no\] because I added comments myself along the way |
 | Reduce/Improve Productivity<sup>2</sup> | \[rating\] because … | \[rating\] because … | \[rating\] because … | \[rating\] because … | \[rating\] because … |
-
 [1] I used / did not use this tool for X aspect of the project because …  
 [2] This tool makes my productivity for X aspect (1-Much Reduced, 2-Reduced, 3-Slightly Reduced, 4-Not Reduced nor Improved, 5-Slightly Improved, 6-Improved, 7-Much Improved)
 
@@ -113,10 +121,27 @@ Describe how you used Generative AI tools to create this final project (a page m
 
 Attach all the prompts you’ve used (e.g., for ChatGPT you can anonymously [share](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) your chat history).
 
+https://chatgpt.com/share/6757e763-a654-8002-8807-d7abc5e47c59
 
-### Add more subsections for the GenAI tools you've used, e.g., Copilot, etc.
 
-Copy all the content under the [ChatGPT Usage](#chatgpt-usage) section to answer the same questions for this tool.
+https://www.perplexity.ai/search/how-can-i-make-it-so-that-each-Unb1CE3JS8eDL3z1A6dhDQ
+
+
+# Accessibility and Responsiveness
+
+For responsivenesss, please check my website at the 480px breakpoint (mobile).
+
+Below are my screenshots of no errors, valid alt-text after using the WAVE tool for all 3 of my HTML pages.
+
+## Index.html
+
+
+
+## Learn_Phrases.html
+
+
+## About.html
+
 
 
 ---
