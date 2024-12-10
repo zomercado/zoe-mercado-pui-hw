@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 : card["Pronunciation"]
             }</div>
             <button class="audio-btn" data-phrase="${card.Phrase}">
-              <img src="images/vector_images/Speaker.svg" alt="Play audio" class="speaker-icon">
+              <img src="images/vector_images/Speaker.svg" alt="Play audio for ${card.Phrase}" class="speaker-icon">
             </button>
           </div>
         </div>
