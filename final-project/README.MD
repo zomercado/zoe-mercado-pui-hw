@@ -134,15 +134,15 @@ For responsivenesss, please check my website at the 480px breakpoint (mobile).
 Below are my screenshots of no errors, valid alt-text after using the WAVE tool for all 3 of my HTML pages.
 
 ## Index.html
-
+![index.html](images/prep_work/wave_index.png)
 
 
 ## Learn_Phrases.html
+![learn_phrases.html](images/prep_work/wave_learn.png)
 
 
 ## About.html
-
-
+![about.html](images/prep_work/wave_about.png)
 
 ---
 

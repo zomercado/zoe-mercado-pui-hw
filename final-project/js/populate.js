@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       let activeFilters = new Set(); // Track active filters
 
       // Country Search Functionality
-      const countrySearch = document.getElementById('countrySearch');
+      const countrySearch = document.getElementById('search-input');
       const countryDropdown = document.getElementById('countryDropdown');
       
       // Extract unique Caribbean countries
